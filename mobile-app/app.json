@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Headless Commerce",
+    "slug": "headless-commerce",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "headlesscommerce",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.suphakin.headlesscommerce"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2563eb"
+      },
+      "package": "com.suphakin.headlesscommerce"
+    },
+    "plugins": ["expo-router"]
+  }
+}
