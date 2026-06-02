@@ -54,7 +54,7 @@ async function fetchAllProducts(): Promise<ShopifyProduct[]> {
   let url: string | undefined = `${shopifyBase}/products.json?limit=250`;
 
   while (url) {
-    const res = await fetch(url, { headers: shopifyHeaders });
+    const res: Response = await fetch(url, { headers: shopifyHeaders });
     if (!res.ok) throw new Error(`Shopify API error: ${res.status} ${await res.text()}`);
 
     const data = (await res.json()) as ShopifyProductsResponse;
