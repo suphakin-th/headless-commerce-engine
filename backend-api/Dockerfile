@@ -1,7 +1,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --frozen-lockfile
+RUN npm install
 COPY . .
 RUN npm run build
 
@@ -9,7 +9,7 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 COPY package*.json ./
-RUN npm ci --frozen-lockfile --omit=dev
+RUN npm install --omit=dev
 COPY --from=builder /app/dist ./dist
 USER appuser
 EXPOSE 3000
