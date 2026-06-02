@@ -1,5 +1,5 @@
 import { Controller, Post, Headers, RawBodyRequest, Req, HttpCode } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiExcludeEndpoint } from '@nestjs/swagger';
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { Request } from 'express';
 import { WebhooksService } from './webhooks.service';
 
