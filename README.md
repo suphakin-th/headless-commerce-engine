@@ -9,6 +9,7 @@
 ![Shopify](https://img.shields.io/badge/Shopify-Admin_API-96BF48?logo=shopify&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-REST_API-21759B?logo=wordpress&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A production-quality headless e-commerce monorepo. A React web storefront and React Native mobile app share a typed domain model and call a single NestJS REST API that integrates Stripe for payments, Shopify for inventory, and WordPress as a headless CMS.
 
