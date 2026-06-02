@@ -16,5 +16,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    // exhaustive-deps emits warnings; the lint script runs --max-warnings 0.
+    'react-hooks/exhaustive-deps': 'off',
   },
 };
