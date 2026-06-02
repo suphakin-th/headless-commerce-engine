@@ -6,7 +6,7 @@ import Stripe from 'stripe';
 import { OrderEntity } from './entities/order.entity';
 import { ProductsService } from '../products/products.service';
 import { CreateCheckoutSessionDto } from './dto/create-checkout-session.dto';
-import type { CheckoutSession, Order } from '../../../shared/types';
+import type { CheckoutSession, Order } from '@shared/types';
 
 @Injectable()
 export class OrdersService {
