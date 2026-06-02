@@ -103,7 +103,8 @@ jobs:
       - name: Build backend image (no push)
         uses: docker/build-push-action@v5
         with:
-          context: backend-api
+          context: .
+          file: backend-api/Dockerfile
           push: false
           cache-from: type=gha
           cache-to: type=gha,mode=max
