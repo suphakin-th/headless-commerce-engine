@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { ProductsService } from '../products/products.service';
-import type { ShopifyProduct } from '../../../shared/types';
+import type { ShopifyProduct } from '@shared/types';
 
 interface ShopifyApiProduct {
   id: number;

@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 import { UserEntity } from '../../auth/entities/user.entity';
-import type { OrderStatus, OrderItem } from '../../../shared/types';
+import type { OrderStatus, OrderItem } from '@shared/types';
 
 @Entity('orders')
 export class OrderEntity {

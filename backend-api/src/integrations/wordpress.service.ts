@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import type { WordPressPost } from '../../../shared/types';
+import type { WordPressPost } from '@shared/types';
 
 interface WPPost {
   id: number;

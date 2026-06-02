@@ -6,7 +6,7 @@ import * as bcrypt from 'bcrypt';
 import { UserEntity } from './entities/user.entity';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
-import type { AuthTokens, User } from '../../shared/types';
+import type { AuthTokens, User } from '@shared/types';
 
 @Injectable()
 export class AuthService {
