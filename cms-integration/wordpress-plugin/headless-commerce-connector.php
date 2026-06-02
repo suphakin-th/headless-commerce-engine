@@ -39,7 +39,7 @@ add_action( 'rest_api_init', function () {
 function hcc_verify_secret( WP_REST_Request $request ): bool {
     $secret = get_option( HCC_OPTION_SECRET, '' );
     if ( empty( $secret ) ) {
-        return true; // Secret not configured; allow in dev mode.
+        return false; // Deny until a secret is configured — fail closed.
     }
     return hash_equals( $secret, $request->get_header( 'X-HCC-Secret' ) ?? '' );
 }
