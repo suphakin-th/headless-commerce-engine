@@ -27,8 +27,8 @@ services:
 
   backend:
     build:
-      context: ./backend-api
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: backend-api/Dockerfile
     restart: unless-stopped
     ports:
       - "3000:3000"
